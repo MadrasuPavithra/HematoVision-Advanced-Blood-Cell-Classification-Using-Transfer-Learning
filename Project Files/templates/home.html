@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HematoVision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      background-color: #e74c3c;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #e74c3c;
+    }
+    .center {
+      text-align: center;
+    }
+    .predict-btn {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    input[type=file] {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the HematoVision</h1>
+    <h2>About Blood Cells</h2>
+    <p>
+      Blood cells play essential roles in immunity, oxygen transport, and clotting.
+      Understanding different types of blood cells is crucial for diagnosis.
+    </p>
+    <h2>Predict Blood Cell Type</h2>
+    <form method="POST" enctype="multipart/form-data" action="/" class="center">
+      <input type="file" name="file" accept="image/*" required /><br> <button class="predict-btn" type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>
