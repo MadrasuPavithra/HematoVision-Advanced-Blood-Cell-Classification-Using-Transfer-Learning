@@ -1,0 +1,13 @@
+Flask
+Pillow
+numpy
+h5py
+keras
+pandas
+scikit-learn
+matplotlib
+seaborn
+opencv-python
+numpy
+tensorflow
+tf-nightly-cpu
